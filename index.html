@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-  <title>头像生成工具</title>
+  <title>长城人寿16周岁定制头像</title>
   <style>
     html,
     body {
@@ -61,7 +61,13 @@
       outline: none;
     }
 
-    .generateImg {
+    .note-text {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .generate-img {
       width: 320px;
       height: 320px;
       display: block;
@@ -80,29 +86,34 @@
 <body>
   <div class="cus-text">
     <ul>
-      <li><img src="./imgs/avatar-1.png"></li>
+      <!-- <li><img src="./imgs/avatar-1.png"></li>
       <li><img src="./imgs/avatar-2.png"></li>
       <li><img src="./imgs/avatar-3.png"></li>
       <li><img src="./imgs/avatar-4.png"></li>
       <li><img src="./imgs/avatar-5.png"></li>
       <li><img src="./imgs/avatar-6.png"></li>
       <li><img src="./imgs/avatar-7.png"></li>
-      <li><img src="./imgs/avatar-8.png"></li>
+      <li><img src="./imgs/avatar-8.png"></li> -->
       <li><img src="./imgs/avatar-9.png"></li>
+      <li><img src="./imgs/avatar-10.png"></li>
+      <li><img src="./imgs/avatar-11.png"></li>
+      <li><img src="./imgs/avatar-12.png"></li>
     </ul>
 
-    <button>上传图片</button>
     <canvas id="canvas" width="800" height="800"></canvas>
-    <img src="" class="generateImg" crossorigin="anonymous">
+    <img src="" class="generate-img" crossorigin="anonymous">
     <input type="file" accept="image/*" hidden>
+    <p class="note-text">长按可以保存头像哟~</p>
+    <button>上传头像</button>
   </div>
+
   <script>
     const ul = document.querySelector('ul')
     const img = document.querySelectorAll('ul img')
     const button = document.querySelector('button')
     const canvas = document.querySelector('#canvas')
     const ctx = canvas.getContext('2d')
-    const generateImg = document.querySelector('.generateImg')
+    const generateImg = document.querySelector('.generate-img')
     const fileUpload = document.querySelector('input')
     let upLoadImg
     let avatarIcon
