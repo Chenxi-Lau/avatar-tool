@@ -1,2 +1,3 @@
-# avater-generator
-头像生成工具
+# avatar-tool
+
+> 头像生成工具
