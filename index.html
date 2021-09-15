@@ -51,6 +51,7 @@
       display: block;
       width: 240px;
       height: 60px;
+      line-height: 60px;
       color: #fff;
       background: linear-gradient(#ffe984, #ed8917) #ed8917;
       font-size: 22px;
@@ -87,6 +88,7 @@
       <li><img src="./imgs/avatar-6.png"></li>
       <li><img src="./imgs/avatar-7.png"></li>
       <li><img src="./imgs/avatar-8.png"></li>
+      <li><img src="./imgs/avatar-9.png"></li>
     </ul>
 
     <button>上传图片</button>
@@ -137,9 +139,7 @@
     // 监听文件变化
     fileUpload.addEventListener('change', function () {
       const img = new Image()
-      console.log(this.files, 'files')
       img.src = URL.createObjectURL(this.files[0])
-      console.log(img.src)
       img.onload = function () {
         drawImage(img)
         drawImage(avatarIcon)
